@@ -9,12 +9,9 @@
 */
 #include "Arduino.h"
 #include "WiFiEsp.h"
-
-// Emulate Serial1 on pins 6/7 if not present
-#ifndef HAVE_HWSERIAL1
 #include "SoftwareSerial.h"
+
 SoftwareSerial SerialESP(2, 8); // RX, TX
-#endif
 
 char ssid[] = "abidev";      // your network SSID (name)
 char pass[] = "abcd1234";    // your network password
